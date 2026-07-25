@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Asmar | Graphic Designer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+
+--yellow:#FFD84D;
+--orange:#FF7A00;
+--green:#2EE59D;
+--blue:#6CC5FF;
+--pink:#FF6BAA;
+--black:#111;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+background:#F7F5F0;
+color:#111;
+overflow-x:hidden;
+
+}
+
+section{
+
+padding:100px 8%;
+
+}
+
+h1,h2,h3{
+
+font-family:'Space Grotesk',sans-serif;
+
+}
+
+a{
+
+text-decoration:none;
+color:inherit;
+
+}
+
+button{
+
+font-family:inherit;
+cursor:pointer;
+
+}
+
+.container{
+
+max-width:1300px;
+margin:auto;
+
+}
+
+/* NAVBAR */
+
+nav{
+
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+z-index:999;
+
+background:white;
+
+border:4px solid black;
+
+box-shadow:8px 8px 0 black;
+
+padding:18px 40px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:900;
+
+}
+
+.menu{
+
+display:flex;
+
+gap:25px;
+
+font-weight:700;
+
+}
+
+.menu a{
+
+transition:.2s;
+
+}
+
+.menu a:hover{
+
+color:var(--orange);
+
+}
+
+/* HERO */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1.2fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:var(--yellow);
+
+border:4px solid black;
+
+box-shadow:6px 6px 0 black;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:78px;
+
+line-height:1;
+
+margin-bottom:25px;
+
+}
+
+.hero h1 span{
+
+color:var(--orange);
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+max-width:700px;
+
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:18px 32px;
+
+background:var(--orange);
+
+color:white;
+
+font-weight:700;
+
+border:4px solid black;
+
+box-shadow:7px 7px 0 black;
+
+transition:.2s;
+
+}
+
+.btn:hover{
+
+transform:translate(-4px,-4px);
+
+box-shadow:11px 11px 0 black;
+
+}
+
+.btn2{
+
+margin-left:15px;
+
+background:white;
+
+color:black;
+
+}
+
+/* HERO CARD */
+
+.hero-card{
+
+background:white;
+
+border:4px solid black;
+
+box-shadow:10px 10px 0 black;
+
+padding:35px;
+
+transform:rotate(3deg);
+
+}
+
+.avatar{
+
+width:180px;
+
+height:180px;
+
+background:var(--yellow);
+
+border:4px solid black;
+
+border-radius:50%;
+
+margin:auto;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:75px;
+
+font-weight:900;
+
+}
+
+.hero-card h3{
+
+margin-top:25px;
+
+font-size:35px;
+
+text-align:center;
+
+}
+
+.hero-card p{
+
+text-align:center;
+
+margin-top:10px;
+
+font-size:18px;
+
+}
+
+.info{
+
+margin-top:35px;
+
+display:grid;
+
+gap:18px;
+
+}
+
+.info div{
+
+background:#fafafa;
+
+padding:15px;
+
+border:3px solid black;
+
+font-weight:700;
+
+}
+
+/* ABOUT */
+
+.section-title{
+
+font-size:55px;
+
+margin-bottom:50px;
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:var(--green);
+
+border:4px solid black;
+
+box-shadow:8px 8px 0 black;
+
+}
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:45px;
+
+}
+
+.card{
+
+background:white;
+
+border:4px solid black;
+
+padding:35px;
+
+box-shadow:9px 9px 0 black;
+
+}
+
+.card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.stat{
+
+background:var(--yellow);
+
+padding:25px;
+
+border:4px solid black;
+
+box-shadow:7px 7px 0 black;
+
+text-align:center;
+
+}
+
+.stat h2{
+
+font-size:45px;
+
+}
+
+.stat p{
+
+margin-top:8px;
+
+font-weight:700;
+
+}
+/* ==========================
+   SKILLS
+========================== */
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.skill{
+
+background:white;
+
+padding:30px;
+
+border:4px solid black;
+
+box-shadow:8px 8px 0 black;
+
+transition:.25s;
+
+}
+
+.skill:hover{
+
+transform:translate(-6px,-6px);
+
+box-shadow:14px 14px 0 black;
+
+}
+
+.skill h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+.skill ul{
+
+list-style:none;
+
+display:grid;
+
+gap:10px;
+
+}
+
+.skill li{
+
+padding:10px;
+
+background:#f5f5f5;
+
+border:2px solid black;
+
+font-weight:700;
+
+}
+
+/* ==========================
+PROJECT
+========================== */
+
+.project-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.project{
+
+background:white;
+
+border:4px solid black;
+
+box-shadow:9px 9px 0 black;
+
+overflow:hidden;
+
+transition:.25s;
+
+}
+
+.project:hover{
+
+transform:translateY(-8px);
+
+}
+
+.project-image{
+
+height:220px;
+
+background:linear-gradient(135deg,var(--yellow),var(--orange));
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:70px;
+
+font-weight:900;
+
+border-bottom:4px solid black;
+
+}
+
+.project-content{
+
+padding:25px;
+
+}
+
+.project-content h3{
+
+font-size:28px;
+
+margin-bottom:12px;
+
+}
+
+.project-content p{
+
+line-height:1.7;
+
+margin-bottom:20px;
+
+}
+
+.tag{
+
+display:inline-block;
+
+padding:8px 14px;
+
+margin-right:8px;
+
+margin-top:10px;
+
+background:var(--green);
+
+border:2px solid black;
+
+font-weight:700;
+
+}
+
+/* ==========================
+TIMELINE
+========================== */
+
+.timeline{
+
+display:grid;
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.timeline-item{
+
+background:white;
+
+border:4px solid black;
+
+padding:30px;
+
+box-shadow:8px 8px 0 black;
+
+position:relative;
+
+}
+
+.timeline-item::before{
+
+content:"";
+
+position:absolute;
+
+left:-18px;
+
+top:35px;
+
+width:25px;
+
+height:25px;
+
+background:var(--orange);
+
+border:4px solid black;
+
+}
+
+.timeline-item h3{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+}
+
+/* ==========================
+CONTACT
+========================== */
+
+.contact{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+
+.contact-card{
+
+background:white;
+
+border:4px solid black;
+
+padding:35px;
+
+box-shadow:8px 8px 0 black;
+
+}
+
+.contact-card h3{
+
+font-size:35px;
+
+margin-bottom:25px;
+
+}
+
+.contact-item{
+
+margin-bottom:18px;
+
+font-size:18px;
+
+font-weight:700;
+
+}
+
+form{
+
+display:grid;
+
+gap:20px;
+
+}
+
+input,textarea{
+
+padding:18px;
+
+font-size:17px;
+
+border:3px solid black;
+
+outline:none;
+
+font-family:inherit;
+
+}
+
+textarea{
+
+height:170px;
+
+resize:none;
+
+}
+
+.send{
+
+background:var(--green);
+
+border:4px solid black;
+
+padding:18px;
+
+font-size:18px;
+
+font-weight:700;
+
+box-shadow:7px 7px 0 black;
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+padding:60px;
+
+text-align:center;
+
+font-weight:700;
+
+}
+
+/* ==========================
+FLOAT BUTTON
+========================== */
+
+.top{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:60px;
+
+height:60px;
+
+background:var(--orange);
+
+border:4px solid black;
+
+box-shadow:7px 7px 0 black;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:25px;
+
+font-weight:900;
+
+cursor:pointer;
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:1000px){
+
+.hero-grid,
+.about-grid,
+.skills-grid,
+.project-grid,
+.contact{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+padding-top:140px;
+
+}
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+}
+
+@media(max-width:700px){
+
+nav{
+
+padding:15px 20px;
+
+}
+
+.menu{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:44px;
+
+}
+
+.section-title{
+
+font-size:38px;
+
+}
+
+.hero-card{
+
+transform:none;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+<!-- =========================
+NAVBAR
+========================= -->
+
+<nav>
+
+<div class="logo">ASMAR.</div>
+
+<div class="menu">
+
+<a href="#about">Tentang</a>
+
+<a href="#skills">Skill</a>
+
+<a href="#project">Project</a>
+
+<a href="#contact">Kontak</a>
+
+</div>
+
+</nav>
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div>
+
+<div class="badge">
+Graphic Designer • Printing Operator • Front-End
+</div>
+
+<h1>
+
+Halo, Saya<br>
+
+<span>Asmar</span>
+
+</h1>
+
+<p>
+
+Nama lengkap saya <b>M. Asmar Rahman</b>.
+
+Saya adalah Graphic Designer dan Operator Percetakan
+dengan pengalaman lebih dari <b>8 tahun</b>.
+Saya mengerjakan branding, logo, banner,
+jersey, media promosi, hingga landing page modern
+menggunakan HTML, CSS dan JavaScript.
+
+</p>
+
+<a href="#project" class="btn">
+Lihat Portofolio
+</a>
+
+<a href="#contact" class="btn btn2">
+Hubungi Saya
+</a>
+
+</div>
+
+<div>
+
+<div class="hero-card">
+
+<div class="avatar">
+A
+</div>
+
+<h3>
+M. Asmar Rahman
+</h3>
+
+<p>
+
+Graphic Designer
+
+<br>
+
+Printing Operator
+
+<br>
+
+Front-End Enthusiast
+
+</p>
+
+<div class="info">
+
+<div>
+📧 marrrgallery@gmail.com
+</div>
+
+<div>
+📱 085825272451
+</div>
+
+<div>
+📷 @asmar_dev
+</div>
+
+<div>
+📍 Indonesia
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+Tentang Saya
+</h2>
+
+<div class="about-grid">
+
+<div class="card">
+
+<p>
+
+Halo, saya <b>M. Asmar Rahman</b>,
+biasa dipanggil <b>Asmar</b>.
+
+Saya bekerja sebagai Graphic Designer sekaligus
+Operator Percetakan.
+
+Selain membuat berbagai desain cetak,
+saya juga mempelajari HTML, CSS,
+dan JavaScript secara otodidak
+untuk membuat website modern.
+
+Saya percaya desain yang baik
+bukan hanya menarik,
+tetapi juga mampu menyampaikan pesan
+dengan jelas dan meningkatkan nilai
+sebuah brand.
+
+</p>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+
+<h2>8+</h2>
+
+<p>Tahun Pengalaman</p>
+
+</div>
+
+<div class="stat">
+
+<h2>100+</h2>
+
+<p>Project Desain</p>
+
+</div>
+
+<div class="stat">
+
+<h2>30+</h2>
+
+<p>Klien</p>
+
+</div>
+
+<div class="stat">
+
+<h2>100%</h2>
+
+<p>Totalitas</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+SKILL
+========================= -->
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Keahlian
+
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill">
+
+<h3>
+Graphic Design
+</h3>
+
+<ul>
+
+<li>CorelDRAW</li>
+
+<li>Adobe Photoshop</li>
+
+<li>Logo Design</li>
+
+<li>Branding</li>
+
+<li>Banner</li>
+
+<li>Poster</li>
+
+<li>Jersey Design</li>
+
+</ul>
+
+</div>
+
+<div class="skill">
+
+<h3>
+Printing
+</h3>
+
+<ul>
+
+<li>Digital Printing</li>
+
+<li>DTF Printing</li>
+
+<li>Large Format</li>
+
+<li>Finishing</li>
+
+<li>Quality Control</li>
+
+<li>Color Management</li>
+
+</ul>
+
+</div>
+
+<div class="skill">
+
+<h3>
+Web Development
+</h3>
+
+<ul>
+
+<li>HTML5</li>
+
+<li>CSS3</li>
+
+<li>JavaScript</li>
+
+<li>Responsive Design</li>
+
+<li>Landing Page</li>
+
+<li>UI Design</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+NAVBAR
+========================= -->
+
+<nav>
+
+<div class="logo">ASMAR.</div>
+
+<div class="menu">
+
+<a href="#about">Tentang</a>
+
+<a href="#skills">Skill</a>
+
+<a href="#project">Project</a>
+
+<a href="#contact">Kontak</a>
+
+</div>
+
+</nav>
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div>
+
+<div class="badge">
+Graphic Designer • Printing Operator • Front-End
+</div>
+
+<h1>
+
+Halo, Saya<br>
+
+<span>Asmar</span>
+
+</h1>
+
+<p>
+
+Nama lengkap saya <b>M. Asmar Rahman</b>.
+
+Saya adalah Graphic Designer dan Operator Percetakan
+dengan pengalaman lebih dari <b>8 tahun</b>.
+Saya mengerjakan branding, logo, banner,
+jersey, media promosi, hingga landing page modern
+menggunakan HTML, CSS dan JavaScript.
+
+</p>
+
+<a href="#project" class="btn">
+Lihat Portofolio
+</a>
+
+<a href="#contact" class="btn btn2">
+Hubungi Saya
+</a>
+
+</div>
+
+<div>
+
+<div class="hero-card">
+
+<div class="avatar">
+A
+</div>
+
+<h3>
+M. Asmar Rahman
+</h3>
+
+<p>
+
+Graphic Designer
+
+<br>
+
+Printing Operator
+
+<br>
+
+Front-End Enthusiast
+
+</p>
+
+<div class="info">
+
+<div>
+📧 marrrgallery@gmail.com
+</div>
+
+<div>
+📱 085825272451
+</div>
+
+<div>
+📷 @asmar_dev
+</div>
+
+<div>
+📍 Indonesia
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+Tentang Saya
+</h2>
+
+<div class="about-grid">
+
+<div class="card">
+
+<p>
+
+Halo, saya <b>M. Asmar Rahman</b>,
+biasa dipanggil <b>Asmar</b>.
+
+Saya bekerja sebagai Graphic Designer sekaligus
+Operator Percetakan.
+
+Selain membuat berbagai desain cetak,
+saya juga mempelajari HTML, CSS,
+dan JavaScript secara otodidak
+untuk membuat website modern.
+
+Saya percaya desain yang baik
+bukan hanya menarik,
+tetapi juga mampu menyampaikan pesan
+dengan jelas dan meningkatkan nilai
+sebuah brand.
+
+</p>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+
+<h2>8+</h2>
+
+<p>Tahun Pengalaman</p>
+
+</div>
+
+<div class="stat">
+
+<h2>100+</h2>
+
+<p>Project Desain</p>
+
+</div>
+
+<div class="stat">
+
+<h2>30+</h2>
+
+<p>Klien</p>
+
+</div>
+
+<div class="stat">
+
+<h2>100%</h2>
+
+<p>Totalitas</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+SKILL
+========================= -->
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Keahlian
+
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill">
+
+<h3>
+Graphic Design
+</h3>
+
+<ul>
+
+<li>CorelDRAW</li>
+
+<li>Adobe Photoshop</li>
+
+<li>Logo Design</li>
+
+<li>Branding</li>
+
+<li>Banner</li>
+
+<li>Poster</li>
+
+<li>Jersey Design</li>
+
+</ul>
+
+</div>
+
+<div class="skill">
+
+<h3>
+Printing
+</h3>
+
+<ul>
+
+<li>Digital Printing</li>
+
+<li>DTF Printing</li>
+
+<li>Large Format</li>
+
+<li>Finishing</li>
+
+<li>Quality Control</li>
+
+<li>Color Management</li>
+
+</ul>
+
+</div>
+
+<div class="skill">
+
+<h3>
+Web Development
+</h3>
+
+<ul>
+
+<li>HTML5</li>
+
+<li>CSS3</li>
+
+<li>JavaScript</li>
+
+<li>Responsive Design</li>
+
+<li>Landing Page</li>
+
+<li>UI Design</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="container">
+
+<h3 style="font-size:32px;margin-bottom:15px;">
+Terima Kasih
+</h3>
+
+<p style="font-size:18px;line-height:1.8;">
+
+© 2026 M. Asmar Rahman
+
+<br>
+
+Graphic Designer • Printing Operator • Front-End Enthusiast
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- Tombol kembali ke atas -->
+
+<div class="top" id="topBtn">
+↑
+</div>
+
+<script>
+
+/*=========================
+Back To Top
+=========================*/
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>300){
+
+topBtn.style.display="flex";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.style.display="none";
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+/*=========================
+Smooth Animation
+=========================*/
+
+const observer = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{
+
+opacity:0,
+
+transform:"translateY(50px)"
+
+},
+
+{
+
+opacity:1,
+
+transform:"translateY(0)"
+
+}
+
+],{
+
+duration:700,
+
+fill:"forwards"
+
+});
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".card,.skill,.project,.timeline-item,.contact-card,.stat").forEach(el=>{
+
+el.style.opacity=0;
+
+observer.observe(el);
+
+});
+
+/*=========================
+Animated Counter
+=========================*/
+
+document.querySelectorAll(".stat h2").forEach(counter=>{
+
+const target=parseInt(counter.innerText);
+
+let value=0;
+
+const timer=setInterval(()=>{
+
+value++;
+
+counter.innerText=value+"+";
+
+if(value>=target){
+
+clearInterval(timer);
+
+counter.innerText=target+"+";
+
+}
+
+},25);
+
+});
+
+/*=========================
+Navbar Active Link
+=========================*/
+
+const sections=document.querySelectorAll("section");
+
+const navLinks=document.querySelectorAll(".menu a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(sec=>{
+
+const top=sec.offsetTop-120;
+
+if(scrollY>=top){
+
+current=sec.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.style.color="#111";
+
+if(link.getAttribute("href")==="#"+current){
+
+link.style.color="#FF7A00";
+
+}
+
+});
+
+});
+
+/*=========================
+Fake Contact Form
+=========================*/
+
+document.querySelector("form").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Terima kasih! Pesan berhasil dikirim.");
+
+this.reset();
+
+});
+
+/*=========================
+Hover Effect
+=========================*/
+
+document.querySelectorAll(".project").forEach(card=>{
+
+card.addEventListener("mousemove",(e)=>{
+
+const rect=card.getBoundingClientRect();
+
+const x=e.clientX-rect.left;
+
+const y=e.clientY-rect.top;
+
+card.style.transform=
+
+"rotateX("+
+
+(-(y-rect.height/2)/30)+
+
+"deg) rotateY("+
+
+((x-rect.width/2)/30)+
+
+"deg)";
+
+});
+
+card.addEventListener("mouseleave",()=>{
+
+card.style.transform="rotateX(0) rotateY(0)";
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
